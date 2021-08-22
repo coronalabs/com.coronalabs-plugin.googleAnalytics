@@ -3,12 +3,8 @@ local metadata =
 	plugin =
 	{
 		format = 'staticLibrary',
-
-		-- This is the name without the 'lib' prefix.
-		staticLibs = {'plugin_googleAnalytics','z','sqlite3'},
-
-		frameworks = {'FirebaseAnalytics','FirebaseCore','FirebaseCoreDiagnostics', "FirebaseInstallations", "GoogleAppMeasurement", "GoogleDataTransport", "GoogleUtilities", "nanopb", "PromisesObjC"},
-
+		staticLibs = { 'plugin_googleAnalytics','z','sqlite3'},
+		frameworks = { 'FirebaseAnalytics', 'GoogleAppMeasurement', 'UserMessagingPlatform', 'FBLPromises', 'FirebaseABTesting', 'FirebaseCore', 'FirebaseCoreDiagnostics', 'FirebaseInstallations', 'FirebaseMessaging', 'FirebaseRemoteConfig', 'GoogleDataTransport', 'GoogleUtilities', 'nanopb', },
 		frameworksOptional = {},
 	},
 }
